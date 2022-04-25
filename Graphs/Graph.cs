@@ -41,5 +41,31 @@
                 Console.WriteLine();
             }
         }
+        /// <summary>
+        /// BFSs the specified adj.
+        /// </summary>
+        /// <param name="adj">The adjacency list representation of a Graph.</param>
+        /// <param name="v">Number of vertices.</param>
+        /// <param name="s">Source vertex.</param>
+        public static void BFS(List<List<int>> adj, int v, int s)
+        {
+            bool[] visited = new bool[v];
+            Queue<int> q = new Queue<int>();
+            visited[s] = true;
+            q.Enqueue(s);
+            while (q.Count > 0)
+            {
+                int u = q.Dequeue();
+                Console.Write(u + " ");
+                foreach (int v2 in adj[u])
+                {
+                    if (!visited[v2])
+                    {
+                        visited[v2] = true;
+                        q.Enqueue((int)v2);
+                    }
+                }
+            }
+        }
     }
 }

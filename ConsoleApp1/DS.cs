@@ -9,3 +9,5 @@ Graph.AddEdge(graph, 1, 2);
 Graph.AddEdge(graph, 1, 3);
 Graph.AddEdge(graph, 4, 1);
 Graph.PrintGraph(graph);
+
+Graph.BFS(graph, 5, 0);
