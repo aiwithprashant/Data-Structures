@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BF004D69-357B-48F3-BB53-2ACA6C9FDC5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "ConsoleApp1\DataStructures.csproj", "{BF004D69-357B-48F3-BB53-2ACA6C9FDC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{7EAD1FCC-C1E5-4F1D-B496-BA00434899EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BF004D69-357B-48F3-BB53-2ACA6C9FDC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF004D69-357B-48F3-BB53-2ACA6C9FDC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF004D69-357B-48F3-BB53-2ACA6C9FDC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAD1FCC-C1E5-4F1D-B496-BA00434899EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAD1FCC-C1E5-4F1D-B496-BA00434899EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAD1FCC-C1E5-4F1D-B496-BA00434899EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAD1FCC-C1E5-4F1D-B496-BA00434899EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
