@@ -67,5 +67,51 @@
                 }
             }
         }
+        private static void BFS(List<List<int>> adj, bool[] visited, int s)
+        {
+            Queue<int> q = new Queue<int>();
+            visited[s]=true;
+            q.Enqueue(s);
+            while (q.Count > 0)
+            {
+                int u=q.Dequeue();
+                Console.Write(u+" ");
+                foreach (int v2 in adj[u])
+                {
+                    if (!visited[v2])
+                    {
+                        visited[v2]=true;
+                        q.Enqueue(((int)v2));
+                    }
+                }
+            }
+        }
+        public static void BFSDisjoint(List<List<int>> adj, int v)
+        {
+            bool[] visited = new bool[v];
+            for (int i = 0; i < v; i++)
+                if (!visited[i])
+                    BFS(adj, visited, i);
+        }
+        private static void DFSRec(List<List<int>> adj, int s, bool[] visited)
+        {
+            visited[s]=true;
+            Console.Write(s + " ");
+            foreach (int v in adj[s])
+                if (!visited[v])
+                    DFSRec(adj, v, visited);
+        }
+        public static void DFS(List<List<int>> adj, int v, int s)
+        {
+            bool[] visited=new bool[v];
+            DFSRec(adj, s, visited);
+        }
+        public static void DFSDisjoint(List<List<int>> adj, int v)
+        {
+            bool[] visited = new bool[v];
+            for(int i=0;i<v;i++)
+                if(!visited[i])
+                    DFSRec(adj, i, visited);
+        }
     }
 }
